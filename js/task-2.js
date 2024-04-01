@@ -22,8 +22,7 @@ class Storage {
   }
   removeItem(itemToRemove){
     for (let i = this.#items.length; i > 0; i--) { // пройтись по все элементам массива
-      if (this.#items[i] === itemToRemove) { // если элемент массива является объектом, и у этого объекта поле value равняется 'b' и является строкой
-        // https://ru.hexlet.io/qna/javascript/questions/kak-udalit-opredelennyy-element-iz-massiva-js
+      if (this.#items[i] === itemToRemove) { 
         this.#items.splice(i, 1); // удалить элемент из массива
       }
     }
